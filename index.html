@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- Tailwind CDN link to use tailwind  -->
+   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <title>Cyclone Bicycles</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-style: italic;
+      font-weight: bold;
+      color: #1a1a1a;
+      text-shadow: 1px 1px 0px #dddddd;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      background-color: #e6f2ff;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      background-color: #000000;
+      color: #fdfdfd;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #7354e3;
+    }
+
+    .bike-img {
+      margin-top: 40px;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="text-center">
+      <h1><em>Campas Ride</em></h1>
+      <p>The Best Way To Get Around Your University</p>
+    </div>
+    <button class="btn" onclick="window.location.href='/log_in.html'">Login</button>
+    <div>
+      <img src="https://i.ibb.co.com/0pySJcSV/Images.png" alt="Bike Image" class="bike-img" />
+    </div>
+  </section>
+</body>
+
+</html>

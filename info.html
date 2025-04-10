@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .top-bar {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-bar img {
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    .top-bar span {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .dashboard-container {
+      display: flex;
+      flex: 1;
+      height: 100%;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #000000;
+      color: #ecf0f1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    .main-content {
+      flex: 1;
+      background-color: #ecf0f1;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #000000;
+      color: white;
+      padding: 15px 20px;
+      font-size: 24px;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <img src="https://i.ibb.co/N2mvGJ7X/material-symbols-pedal-bike-outline.png" alt="Bike Icon">
+    <span onclick="window.location.href='/'">Campus Rides</span>
+  </div>
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul>
+        <li><a href="#">Users</a></li>
+        <li><a href="review.html">Reports</a></li>
+        <li><a href="admin.html">Logout</a></li>
+      </ul>
+    </div>
+    
+    <div class="main-content">
+      <div class="header">Welcome, Admin</div>
+      <div class="content">
+        <div class="card">
+          <h3>Dashboard Overview</h3>
+          <p>This is a placeholder for your admin stats or graphs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

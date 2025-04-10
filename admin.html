@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CDN link to use tailwind  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+      <!-- Nav bar  -->
+      <nav>
+        <div class="navbar bg-gray-100 shadow-sm flex justify-between ">
+            <div class="navbar-start">
+                <!--Mobile Dwondrop-->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold">
+                        <li onclick="window.location.href='/home.html'"><a>Home</a></li>
+                        <li onclick="window.location.href='/booking.html'"><a>Booking</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <span class="flex justify-center items-center">
+                        <img src="https://i.ibb.co/N2mvGJ7X/material-symbols-pedal-bike-outline.png" class="h-9"
+                            alt="Bike Icon">
+                    </span>
+                    <span onclick="window.location.href='/'">Campus Rides</span>
+                </a>
+
+            </div>
+            <div class="navbar-end hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 font-semibold ">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-[url('https://i.ibb.co.com/4Z3qH66J/2021-09-18.jpg')] bg-cover">
+        <div class="hero  min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse"
+            >
+                <div class="text-center lg:text-left text-white">
+                    <h1 class="text-5xl font-bold italic">Admin Login</h1>
+                    <p class="py-6 font-semibold italic">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                </div>
+
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Email</label>
+                            <input type="email" class="input" placeholder="Email" />
+                            <label class="fieldset-label">Password</label>
+                            <input type="password" class="input" placeholder="Password" />
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button class="btn btn-neutral mt-4" onclick="window.location.href='/info.html'">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     
